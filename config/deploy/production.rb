@@ -3,9 +3,9 @@
 ############################################
 
 set :stage, :production
-set :stage_url, "http://www.example.com"
-server "XXX.XXX.XX.XXX", user: "SSHUSER", roles: %w{web app db}
-set :deploy_to, "/deploy/to/path"
+set :stage_url, "http://wp.controlmas.mx"
+server "web452.webfaction.com", user: "ortegon000", roles: %w{web app db}
+set :deploy_to, "/home/ortegon000/webapps/wp_controlmas_mx"
 
 ############################################
 # Setup Git
@@ -19,11 +19,11 @@ set :branch, "master"
 
 #specify extra ssh options:
 
-#set :ssh_options, {
+set :ssh_options, {
 #    auth_methods: %w(password),
-#    password: 'password',
+    password: '18200210Yl',
 #    user: 'username',
-#}
+}
 
 #specify a specific temp dir if user is jailed to home
 #set :tmp_dir, "/path/to/custom/tmp"
